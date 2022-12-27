@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1be39fe885c2ddc47a332ab8f98a753f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cyberpunk
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0740d743a5aa23544ae543e46054a93c, type: 3}
+  - {fileID: 12800000, guid: dac12d11b62a70849a76f78e36a8e72d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
