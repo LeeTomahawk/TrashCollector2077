@@ -18,7 +18,7 @@ namespace StarterAssets
 
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
-		public bool cursorInputForLook = true;
+		public static bool cursorInputForLook = true;
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		public void OnMove(InputValue value)
@@ -74,6 +74,11 @@ namespace StarterAssets
 		private void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+		}
+
+		public static void SetCursorInputForLook(bool state)
+        {
+			cursorInputForLook = state;
 		}
 	}
 	
