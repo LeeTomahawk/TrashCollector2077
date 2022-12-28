@@ -5,6 +5,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
+using StarterAssets;
 
 public class ModalActions : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class ModalActions : MonoBehaviour
         PlayerPrefs.SetFloat("x", 3.97f);
         PlayerPrefs.SetFloat("y", 0.18f);
         PlayerPrefs.SetFloat("z", -14.95f);
+        StarterAssetsInputs.SetCursorInputForLook(true);
         SceneManager.LoadScene("ParkGameScene");
     }
 

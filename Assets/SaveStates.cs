@@ -6,6 +6,7 @@ using System.IO;
 using Assets;
 using Newtonsoft.Json;
 using TMPro;
+using StarterAssets;
 
 public class SaveStates : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class SaveStates : MonoBehaviour
     {
         isModalVisible = !isModalVisible;
         modal.SetActive(isModalVisible);
+        StarterAssetsInputs.SetCursorInputForLook(!isModalVisible);
     }
 
     public void LoadGame()
