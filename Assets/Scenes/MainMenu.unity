@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 311449453}
   - component: {fileID: 311449452}
   - component: {fileID: 311449451}
+  - component: {fileID: 311449454}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -435,7 +436,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 311449452}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 311449454}
+        m_TargetAssemblyTypeName: ModalActions, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &311449452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,6 +548,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311449449}
   m_CullTransparentMesh: 1
+--- !u!114 &311449454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311449449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace3fbdaca82353408e29cab639f2b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savePath: C:\TrashCollector2077
+  saveFilename: Save.txt
 --- !u!1 &489056008
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +574,7 @@ GameObject:
   - component: {fileID: 489056012}
   - component: {fileID: 489056011}
   - component: {fileID: 489056010}
+  - component: {fileID: 489056013}
   m_Layer: 5
   m_Name: LoadGameButton
   m_TagString: Untagged
@@ -617,7 +645,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489056011}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 489056013}
+        m_TargetAssemblyTypeName: SaveStates, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &489056011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +755,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489056008}
   m_CullTransparentMesh: 1
+--- !u!114 &489056013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489056008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70de2cc7bb3b2b546a7853dd140831a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savePath: C:\TrashCollector2077
+  saveFilename: Save.txt
+  isModalVisible: 0
+  modal: {fileID: 0}
 --- !u!1 &516556420
 GameObject:
   m_ObjectHideFlags: 0
