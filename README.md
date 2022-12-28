@@ -4,8 +4,11 @@
 Gotowe dwie sceny
  - menu główne
  - mapa z parkiem i śmieciami respiącymi pod klawiszami W, S, D, A
+ - stan gry
+ - zapis/odczyt do pliku {pozycja gracza, punkty}
+ - przechodzenie między scenami
  
  Sceny znajdują się w folderze Scenes
  
  
- Potrzeba napisać cały skrypt obsługujący grę, tworzenie nowej rozgrywki, ładowanie stanu, zapis stanu, jakieś punkty po kontakcie ze śmieciami itp
+ Trzeba dodać jakieś zliczanie punktów po kontakcie ze śmieciami itp
