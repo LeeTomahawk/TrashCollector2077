@@ -60,6 +60,7 @@ public class SaveStates : MonoBehaviour
             //tutaj pozostale dane
 
             SceneManager.LoadScene("ParkGameScene");
+            StarterAssetsInputs.SetCursorInputForLook(true);
         }
     }
 }

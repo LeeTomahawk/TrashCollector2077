@@ -62,4 +62,9 @@ public class ModalActions : MonoBehaviour
         writer.Close();
 
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
