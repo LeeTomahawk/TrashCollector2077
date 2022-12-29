@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - player
+  - trash1
+  - trash2
+  - trash3
+  - trash4
   layers:
   - Default
   - TransparentFX
